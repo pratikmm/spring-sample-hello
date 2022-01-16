@@ -2,6 +2,7 @@ FROM maven AS build
 COPY . /home/maven/project
 WORKDIR /home/maven/project
 RUN mvn clean install
+RUN mvn test
 
 FROM openjdk:8-jre-slim
 
