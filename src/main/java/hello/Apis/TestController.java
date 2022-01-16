@@ -15,7 +15,7 @@ public class TestController {
     public ResponseEntity testhello(){
 
 
-        String json = "{'status': 'success'}";
+        String json = "{'status': 'success','code':'OK'}";
         return new ResponseEntity<>(json, HttpStatus.OK);
 
     }
